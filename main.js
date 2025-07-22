@@ -10,6 +10,9 @@ import { q7 } from './data/q7.js'
 import { q8 } from './data/q8.js'
 import { q9 } from './data/q9.js'
 import { q10 } from './data/q10.js'
+import { q11 } from './data/q11.js'
+import { q12 } from './data/q12.js'
+import { q13 } from './data/q13.js'
 
 const containerElem = document.querySelector('.questions')
 const data = new Map([
@@ -22,7 +25,10 @@ const data = new Map([
   ...q7,
   ...q8,
   ...q9,
-  ...q10
+  ...q10,
+  ...q11,
+  ...q12,
+  ...q13
 ])
 let counter = 1
 
