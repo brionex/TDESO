@@ -336,6 +336,30 @@ main {
   }
 }
 
+footer {
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+  border-top: 1px solid var(--card-border);
+  text-align: center;
+  padding-block: 100px;
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+footer p {
+  margin-bottom: 8px;
+  color: var(--text-secondary);
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+footer span {
+  color: var(--text-primary);
+  font-weight: bold;
+}
+
 @media (width < 900px) {
   .nav-container {
     flex-direction: column;
