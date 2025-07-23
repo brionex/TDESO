@@ -1,5 +1,6 @@
-import { createStudyArticle } from './utils.js'
-import { createNavigation } from './utils.js'
+import { darkMode } from './scripts/darkmode.js'
+import { navigation } from './scripts/navigation.js'
+import { createStudyArticle } from './scripts/utils.js'
 import { q1 } from './data/q1.js'
 import { q2 } from './data/q2.js'
 import { q3 } from './data/q3.js'
@@ -40,4 +41,6 @@ data.forEach((value, key) => {
 })
 
 containerElem.appendChild(frag)
-createNavigation(data)
+
+navigation(data, '.nav-container', '.btn-nav')
+darkMode('.btn-darkmode')

@@ -4,14 +4,60 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cuestionario</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script defer src="./main.js" type="module"></script>
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <script defer src="src/main.js" type="module"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1>Cuestionario COMPLEXIVO-2025-1 TECNOLOGIA DESARROLLO DE SOFTWARE</h1>
-    </header>
+    <script>
+      if (localStorage.getItem("darkMode") === "true") {
+        document.body.classList.add("dark")
+      }
+    </script>
 
-    <div class="questions"></div>
+    <div class="fix-container">
+      <header>
+        <a href="/">TDESO</a>
+        <div class="buttons">
+          <button class="btn-darkmode">
+            <i class="ti ti-sun btn-open"></i
+            ><i class="ti ti-moon btn-close"></i>
+          </button>
+          <button class="btn-nav">
+            <i class="ti ti-layout-sidebar-left-collapse btn-open"></i>
+            <i class="ti ti-layout-sidebar-left-expand btn-close"></i>
+          </button>
+        </div>
+      </header>
+
+      <section class="nav-container">
+        <div class="floating-box">
+          <div>
+            <p>...</p>
+          </div>
+        </div>
+        <div class="navigation">
+          <nav>
+            <div>
+              <ul></ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+    </div>
+
+    <main>
+      <section class="hero">
+        <h1>
+          Cuestionario <br />Examen Complexivo 2025-1<br />
+          <span class="small">Tecnología en Desarrollo de Software</span>
+        </h1>
+      </section>
+
+      <section class="questions"></section>
+    </main>
   </body>
 </html>
