@@ -1,0 +1,25 @@
+{
+  "name": "quest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "process": "node src/node-scripts/generateQuestions.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brionex/TDESO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/brionex/TDESO/issues"
+  },
+  "homepage": "https://github.com/brionex/TDESO#readme",
+  "dependencies": {
+    "fs-extra": "^11.3.1",
+    "jsdom": "^26.1.0"
+  }
+}
